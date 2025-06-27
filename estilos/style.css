@@ -93,9 +93,11 @@ article>p {
 /* --- IMAGENS --- */
 .imagem-capa img {
   border-radius: 70px 70px 0px 0px;
-  min-width: 280px;
+  width: 100%;
   max-width: 500px;
-  margin: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .imagem-hominideo img {
