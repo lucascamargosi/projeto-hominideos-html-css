@@ -28,7 +28,7 @@ Este projeto apresenta, de forma acessível e visual, as principais espécies de
 
 ##  Link para visualização
 
-> (após publicação)
+> https://lucascamargosi.github.io/projeto-hominideos-html-css/
 
 ## Referências utilizadas
 
