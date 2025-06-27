@@ -1,0 +1,169 @@
+/* --- BASE GLOBAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'Android';
+  src: url('../fontes/idroid.otf') format('opentype');
+  font-weight: normal;
+}
+
+:root {
+  --cor0: #c5cfeb;
+  --cor1: #e1c383;
+  --cor2: #8a6e20;
+  --cor3: #805626;
+  --cor4: #2a311c;
+  --cor5: #042c16;
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: 'Bebas Neue', cursive;
+  --font-android: 'Android', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- BODY --- */
+body {
+  font-size: 1.2rem;
+  color: white;
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+  font-family: var(--fonte-padrao);
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+  min-height: 150px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-family: var(--font-android);
+  font-size: 2.5em;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1.25rem;
+    box-shadow: 0 0 10px rgba(148, 85, 85, 0.466);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 2rem;
+}
+
+/* --- CONTAINER --- */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --- SECTION / ARTICLE */
+section {
+  margin-bottom: 2.5rem;
+  padding: 1rem 0;
+}
+
+section>h2 {
+  margin-bottom: 30px;
+  font-family: var(--font-android);
+}
+
+article>h3{
+  margin: 10px 0 5px 0;
+  font-family: var(--fonte-destaque);
+  font-size: 1.5em;
+}
+
+article>p {
+  margin-bottom: 1rem;
+}
+
+
+/* --- IMAGENS --- */
+.imagem-capa img {
+  border-radius: 70px 70px 0px 0px;
+  min-width: 280px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.imagem-hominideo img {
+  width: 100%; 
+  max-width: 300px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+.imagem-hominideo figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: var(--cor0);
+  margin-bottom: 30px;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+  color: white;
+  font-size: 14px;
+}
+
+/* --- MEDIA QUERIES*/
+@media (min-width: 600px) {
+  /* regras para tablet */
+  body {
+    font-size: 1.1rem;
+  }
+
+  main{
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(148, 85, 85, 0.5);
+  }
+
+  .container {
+    max-width: 800px;
+    padding: 30px;
+  }
+
+  .imagem-hominideo img {
+    max-width: 400px;
+    height: 250px;
+  }
+}
+
+@media(min-width: 900px) {
+  /* regras para desktop */
+  body {
+    font-size: 1.2rem;
+  }
+
+  main{
+    padding: 3rem;
+    border-radius: 10px;
+  }
+
+  .container {
+    max-width: 1000px;
+    padding: 40px;
+  }
+
+  .imagem-hominideo img {
+    max-width: 500px;
+    height: 300px;
+  }
+}
